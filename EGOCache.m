@@ -75,6 +75,10 @@ static EGOCache* __instance;
 	return __instance;
 }
 
++ (NSString*)cachePathForKey:(NSString*)key {
+    return cachePathForKey(key);
+}
+
 - (id)init {
 	if((self = [super init])) {
 		NSDictionary* dict = [NSDictionary dictionaryWithContentsOfFile:cachePathForKey(@"EGOCache.plist")];

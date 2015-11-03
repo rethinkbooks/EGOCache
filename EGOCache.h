@@ -35,6 +35,7 @@
 }
 
 + (EGOCache*)currentCache;
++ (NSString*)cachePathForKey:(NSString*)key;
 
 - (void)clearCache;
 - (void)removeCacheForKey:(NSString*)key;
